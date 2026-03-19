@@ -1,6 +1,6 @@
 # antigravity-server-centos7-simple
 
-English | 中文
+english | 中文
 --- | ---
 Patch Antigravity Server to run on RHEL/CentOS 7 style systems. | 为 Antigravity Server 提供补丁，使其可在 RHEL/CentOS 7 类系统运行。
 
