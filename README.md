@@ -31,7 +31,7 @@ ANTIGRAVITY_GNU_DIR=/path/to/gnu \
 - GNU runtime files present in `ANTIGRAVITY_GNU_DIR`  
   `ANTIGRAVITY_GNU_DIR` 中包含 GNU 运行文件
 
-## What It Does | 执行内容
+## What It Does | 脚本逻辑
 1. Copies GNU runtime files into `<server-dir>/gnu` when needed.  
    将 GNU 运行时文件复制到 `<server-dir>/gnu`。
 2. Patches ELF interpreter from system loader to bundled loader.  
@@ -44,6 +44,6 @@ ANTIGRAVITY_GNU_DIR=/path/to/gnu \
 ## Scripts | 脚本说明
 - `antigravity-server-centos7-simple.sh`: one-command entrypoint | 一键注入脚本
 - `scripts/patch-antigravity-server.sh`: core patch logic | 核心补丁
-- `scripts/install-from-tarball.sh`: install from tarball then patch | 从 tarball 安装后再打补丁
-- `scripts/bundle-gnu-runtime.sh`: copy runtime files into `<server-dir>/gnu` | 将运行时复制到 `<server-dir>/gnu`
+- `scripts/install-from-tarball.sh`: install from tarball then patch | 从 tarball 安装并修补
+- `scripts/bundle-gnu-runtime.sh`: copy runtime files into `<server-dir>/gnu` | 复制到 `<server-dir>/gnu`
 - `scripts/list-elf-interpreters.sh`: inspect current ELF interpreters | 查看当前 ELF interpreter
