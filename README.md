@@ -4,6 +4,9 @@ English | 中文
 Patch Antigravity Server to run on RHEL/CentOS 7 style systems. | 为 Antigravity Server 修补，使得可以在 RHEL/CentOS 7 类系统运行。
 
 ## Quick Start | 快速开始
+This project patches an existing server installation. If `~/.antigravity-server` does not exist yet, run the first Antigravity connection or use `scripts/install-from-tarball.sh` first.  
+这个项目用于修补已经存在的服务端安装。如果 `~/.antigravity-server` 还不存在，请先完成一次 Antigravity 首次连接，或者先使用 `scripts/install-from-tarball.sh` 安装。
+
 After each local Antigravity upgrade, run this on the remote server:  
 每次本地升级 Antigravity 后，在远端服务器执行：
 
@@ -28,6 +31,8 @@ ANTIGRAVITY_GNU_DIR=/path/to/gnu \
 ## Requirements | 程序依赖
 - `patchelf` available in `PATH`  
   `PATH` 中可用 `patchelf`
+- Existing server files under `ANTIGRAVITY_SERVER_DIR`, unless you install from tarball first  
+  `ANTIGRAVITY_SERVER_DIR` 下需要已有服务端文件，除非你先走 tarball 安装流程
 - GNU runtime files present in `ANTIGRAVITY_GNU_DIR`  
   `ANTIGRAVITY_GNU_DIR` 中包含 GNU 运行文件
 
